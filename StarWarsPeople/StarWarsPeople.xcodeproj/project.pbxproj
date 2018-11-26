@@ -97,9 +97,10 @@
 		20D11C0421AC3AC600A5FC6E /* StarWarsPeople */ = {
 			isa = PBXGroup;
 			children = (
+				20D11C3321AC3B4600A5FC6E /* Model */,
+				20D11C3421AC3B5700A5FC6E /* View */,
+				20D11C3521AC3B5E00A5FC6E /* Controller */,
 				20D11C0521AC3AC600A5FC6E /* AppDelegate.swift */,
-				20D11C0721AC3AC600A5FC6E /* ViewController.swift */,
-				20D11C0921AC3AC600A5FC6E /* Main.storyboard */,
 				20D11C0C21AC3ACE00A5FC6E /* Assets.xcassets */,
 				20D11C0E21AC3ACE00A5FC6E /* LaunchScreen.storyboard */,
 				20D11C1121AC3ACE00A5FC6E /* Info.plist */,
@@ -123,6 +124,29 @@
 				20D11C2721AC3AD000A5FC6E /* Info.plist */,
 			);
 			path = StarWarsPeopleUITests;
+			sourceTree = "<group>";
+		};
+		20D11C3321AC3B4600A5FC6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20D11C3421AC3B5700A5FC6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20D11C0921AC3AC600A5FC6E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20D11C3521AC3B5E00A5FC6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20D11C0721AC3AC600A5FC6E /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
