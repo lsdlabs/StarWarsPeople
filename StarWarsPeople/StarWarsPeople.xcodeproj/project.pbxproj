@@ -14,6 +14,7 @@
 		20D11C1021AC3ACE00A5FC6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D11C0E21AC3ACE00A5FC6E /* LaunchScreen.storyboard */; };
 		20D11C1B21AC3AD000A5FC6E /* StarWarsPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D11C1A21AC3AD000A5FC6E /* StarWarsPeopleTests.swift */; };
 		20D11C2621AC3AD000A5FC6E /* StarWarsPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D11C2521AC3AD000A5FC6E /* StarWarsPeopleUITests.swift */; };
+		20D11C3921AC46C400A5FC6E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D11C3821AC46C400A5FC6E /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		20D11C2121AC3AD000A5FC6E /* StarWarsPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D11C2521AC3AD000A5FC6E /* StarWarsPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleUITests.swift; sourceTree = "<group>"; };
 		20D11C2721AC3AD000A5FC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D11C3821AC46C400A5FC6E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../../../../../Documents/Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		20D11C3321AC3B4600A5FC6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20D11C3821AC46C400A5FC6E /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D11C3921AC46C400A5FC6E /* Person.swift in Sources */,
 				20D11C0821AC3AC600A5FC6E /* ViewController.swift in Sources */,
 				20D11C0621AC3AC600A5FC6E /* AppDelegate.swift in Sources */,
 			);
