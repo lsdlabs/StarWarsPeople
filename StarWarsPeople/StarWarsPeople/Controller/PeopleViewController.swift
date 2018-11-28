@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PeopleViewController: UITableViewController {//UIViewController 
 
     // MARK: - Properties
     
@@ -48,6 +48,11 @@ class ViewController: UIViewController {
             allJsonData.forEach() { print($0.name)
                 self.people.append($0.name) }
             print("The people array is: \(self.people)")
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
         }
         dataTask.resume()
     }
@@ -63,5 +68,27 @@ class ViewController: UIViewController {
             print("JSON Error: \(error)")
             return nil
         }
+    }
+}
+
+
+// MARK: - TableView Delegate Methods
+extension PeopleViewController {
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell", for: indexPath)
+        cell.textLabel?.text = "\(people[indexPath.row])"
+        return cell
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return people.count
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
